@@ -4,17 +4,7 @@
 
 ---
 
-## ✅ Schema Validate করার কমান্ড
-
-```bash
-npx prisma validate
-```
-
-> এই কমান্ড চালালে Prisma চেক করে schema-তে কোনো ভুল আছে কিনা।
-
----
-
-## 📦 উদাহরণ Schema
+## Schema
 
 ```prisma
 generator client {
@@ -146,6 +136,16 @@ col6 DateTime @db.Timetz(6)
 | **কখন ব্যবহার** | Timezone-সহ শুধু সময় দরকার হলে |
 
 > ⚠️ **সতর্কতা:** PostgreSQL নিজেই `TIMETZ` ব্যবহার না করার পরামর্শ দেয়। বেশিরভাগ ক্ষেত্রে `Timestamptz` বেশি কার্যকর।
+
+---
+
+## ✅ Schema Validate করার কমান্ড
+
+```bash
+npx prisma validate
+```
+
+> এই কমান্ড চালালে Prisma চেক করে schema-তে কোনো ভুল আছে কিনা।
 
 ---
 
